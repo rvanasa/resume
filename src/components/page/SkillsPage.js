@@ -66,8 +66,6 @@ const skills = [{
                 name: 'Socket.io'
             }, {
                 name: 'Passport'
-            }, {
-                name: 'Feathers.js'
             }]
         }, {
             name: 'Database',
@@ -111,11 +109,10 @@ const skills = [{
         toggle: true,
         parts: [{
             name: 'Deep Learning',
-            toggle: true,
             parts: [{
                 name: 'Models',
                 parts: [{
-                    name: 'TensorFlow.js'
+                    name: 'TensorFlow'
                 }, {
                     name: 'Transformers'
                 }, {
@@ -326,10 +323,7 @@ export default function SkillsPage(props) {
     }
 
     return (
-        <div style={{
-            background: 'url(img/city.jpg) white fixed center',
-            backgroundSize: 'cover',
-        }}>
+        <div className="bg-img" style={{backgroundImage: 'url(img/city.jpg)'}}>
             <Pivot title={['Skills', '&', 'Achievements']} name caret
                    left={{name: 'Story', link: '/story'}} right={{name: 'Projects', link: '/projects'}}/>
             <div className="divider bg-warning"/>

@@ -5,10 +5,7 @@ import Pivot from '../Pivot';
 
 export default function ContactPage() {
     return (
-        <div style={{
-            background: 'url(img/plane.jpg) white fixed center',
-            backgroundSize: 'cover',
-        }}>
+        <div className="bg-img" style={{backgroundImage: 'url(img/plane.jpg)'}}>
             <Pivot title={['Let\'s', 'get', 'in', 'Touch.']} caret background={'#0003'}
                    left={{name: 'Projects', link: '/projects'}} right={{name: 'Home', link: '/'}}/>
             <div className="divider bg-success"/>

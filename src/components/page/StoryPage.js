@@ -97,21 +97,18 @@ const story = [{
 
 export default function StoryPage() {
     return (
-        <div style={{
-            background: 'url(img/rays.jpg) white fixed center',
-            backgroundSize: 'cover',
-        }}>
+        <div className="bg-img" style={{backgroundImage: 'url(img/rays.jpg)'}}>
             <Pivot title={['A', 'Story']} name caret background={'#0003'}
                    left={{name: 'Home', link: '/'}} right={{name: 'Skills', link: '/skills'}}/>
             <div className="divider bg-info"/>
             <Sticky>
-                <div id="story-start">
+                <div className="d-flex flex-column" style={{height: '100vh'}}>
                     <div className="py-4" style={{background: '#000B'}}>
                         <hr/>
                         <h1 className="text-center text-thin text-glow">Let's start from the beginning.</h1>
                         <hr/>
                     </div>
-                    <Parallax bgImage="img/baby.jpg" style={{height: '60vh'}} strength={400}/>
+                    <div className="flex-grow-1" style={{ background: 'url(img/baby.jpg) center 20%', backgroundSize: 'cover'}}/>
                 </div>
             </Sticky>
             <div style={{opacity: .95}}>

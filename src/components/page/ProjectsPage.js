@@ -54,10 +54,7 @@ export default function ProjectsPage() {
 
     return (
         <div>
-            <div style={{
-                background: 'url(img/abstract.jpg) white fixed center',
-                backgroundSize: 'cover',
-            }}>
+            <div className="bg-img" style={{backgroundImage: 'url(img/abstract.jpg)'}}>
                 <Pivot title={['Timeline', 'Portfolio']} name caret background={'#0003'}
                        left={{name: 'Skills', link: '/skills'}} right={{name: 'Contact', link: '/contact'}}/>
                 <div className="divider bg-light"/>

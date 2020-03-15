@@ -4,10 +4,7 @@ import Navigation from '../Navigation';
 
 export default function HomePage() {
     return (
-        <div style={{
-            background: 'url(img/clouds.jpg) white fixed center',
-            backgroundSize: 'cover',
-        }}>
+        <div className="bg-img" style={{backgroundImage: 'url(img/clouds.jpg)'}}>
             <Pivot title={['Ryan', 'Vandersmith']} delay={3} caret/>
             <Navigation/>
         </div>
