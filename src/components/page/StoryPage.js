@@ -91,7 +91,7 @@ const story = [{
         icon: FaSlack,
         iconClass: 'text-danger',
         text: 'Communicating to <b>technical</b> & <b>business</b> audiences',
-        footnote: 'Probably worth emphasizing',
+        footnote: '(Probably worth emphasizing)',
     }],
 }];
 

@@ -40,7 +40,7 @@ function Skill(props) {
     return (
         <div className={`skill ${toggled ? 'toggled' : ''} ${tree.parts ? 'parent' : ''} ${tree.className || ''}`}
              style={{...tree.style}}>
-            <h5 className="text-thin pt-0 pb-2 noselect" style={{
+            <h5 className="text-thin pt-0 pb-2 noselect d-flex align-items-center" style={{
                 cursor: 'pointer',
                 opacity: tree.parts ? (toggled ? .9 : .5) : 1,
             }} onMouseDown={onClick}>
@@ -55,7 +55,7 @@ function Skill(props) {
                     )}
                     {React.createElement(tree.icon || (tree.parts ? FaFolder : FaFileAlt), {className: 'mb-1'})}
                 </span>
-                {tree.name}
+               <span className="flex-grow-1">{tree.name}</span>
             </h5>
             {!toggled && tree.parts && (
                 <div className="mt-2">

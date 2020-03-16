@@ -46,12 +46,13 @@ export default function ContactSection() {
                 <h1 className="text-thin text-light py-2">Ryan Vandersmith</h1>
                 <div className="container">
                     {media.map(m => (
-                        <Link key={m.link}
+                        <a key={m.link}
                             className={`btn btn-lg px-3 py-3 mb-3 mx-2 btn-outline-${m.color || 'dark'} text-${m.color || 'dark'}`}
-                            to={m.link}
-                            target="_blank" style={{borderRadius: '50% !important', ...m.style}}>
+                           style={{borderRadius: '50% !important', ...m.style}}
+                           href={m.link}
+                            target="_blank">
                             <m.icon size="1.5em"/>
-                        </Link>
+                        </a>
                     ))}
                 </div>
                 <hr className="mt-5"/>

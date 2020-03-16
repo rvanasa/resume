@@ -1,15 +1,23 @@
 import React, {useState} from 'react';
 import {
-    FaAward,
+    FaAddressBook,
+    FaAdjust,
+    FaAppStore, FaAtlas,
+    FaAward, FaAws, FaBookmark, FaBookOpen, FaChess, FaChessKing, FaCity,
     FaCode,
-    FaDesktop,
+    FaCubes,
+    FaDesktop, FaDollarSign, FaFlagUsa,
+    FaGlobe,
     FaGraduationCap,
+    FaHardHat,
     FaMedal,
     FaMobileAlt,
-    FaRegBuilding,
+    FaMoneyBillAlt, FaQrcode,
+    FaRegBuilding, FaRegFlag,
     FaRibbon,
+    FaRunning,
     FaSchool,
-    FaShoppingCart
+    FaShoppingCart, FaWarehouse
 } from 'react-icons/all';
 import Skill from '../Skill';
 import Pivot from '../Pivot';
@@ -206,7 +214,7 @@ const skills = [{
         name: 'Freelance Consulting',
         toggle: true,
         parts: [{
-            name: '2016 - 2020',
+            name: '2017 - 2020',
             parts: [{
                 name: 'Progressive Web Apps'
             }, {
@@ -215,13 +223,20 @@ const skills = [{
                 name: 'Full-stack and UX design'
             }]
         }, {
-            name: '2016-2017',
+            name: '2016 - 2017',
             parts: [{
                 name: 'Full-stack webapps'
             }, {
                 name: 'Decentralized applications'
             }, {
                 name: 'Software mentoring'
+            }]
+        }, {
+            name: 'Highlighted Clients',
+            parts: [{
+                name: 'FBLA Colorado Chapter'
+            }, {
+                name: 'Galway Aviation'
             }]
         }]
     }, {
@@ -263,52 +278,93 @@ const skills = [{
     name: 'Achievements',
     icon: FaMedal,
     parts: [{
-        name: '2017 Boettcher Scholar',
+        name: 'Scholarships',
+        icon: FaBookOpen,
+        toggle: true,
+        parts: [{
+            name: '2017: CSM PATHS Scholar',
+            icon: FaHardHat,
+        }, {
+            name: '2017: Boettcher Scholar',
+            icon: FaGlobe,
+        }, {
+            name: '2017: National AP Scholar',
+            icon: FaSchool,
+        }]
+    }, {
+        name: 'Grants',
+        icon: FaMoneyBillAlt,
+        toggle: true,
+        parts: [{
+            name: '2016: Verizon App Challenge ($5,000)',
+            icon: FaAppStore
+        }, {
+            name: '2015: SIM Sponsorship (FBLA Nationals)',
+            icon: FaMoneyBillAlt,
+        }]
+    }, {
+        name: 'Rock Canyon High School',
         icon: FaGraduationCap,
-    }, {
-        name: '2017 National AP Scholar',
-        icon: FaSchool,
-    }, {
-        name: 'Highest Academic Honors',
-        icon: FaRibbon,
-    }, {
-        name: '2016 Verizon App Challenge',
-        icon: FaAward,
         toggle: true,
         parts: [{
-            name: 'Best in Region (U.S. West)'
+            name: 'Wall of Honor (Academics)',
+            icon: FaWarehouse
         }, {
-            name: 'Best in State (Colorado)'
-        }]
-    }, {
-        name: '2016 FBLA State Conference',
-        icon: FaMobileAlt,
-        toggle: true,
-        parts: [{
-            name: '1st place: Mobile App Development'
+            name: 'Wall of Honor (Activities)',
+            icon: FaWarehouse
         }, {
-            name: '1st place: Cyber Security'
-        }]
+            name: 'Highest Academic Honors',
+            icon: FaRibbon
+        }, {
+            name: 'Outstanding Technology Student 2013-2014',
+            icon: FaQrcode
+        },]
     }, {
-        name: '2015 FBLA State Conference',
-        icon: FaMobileAlt,
+        name: 'Future Business Leaders of America',
+        icon: FaRegFlag,
         toggle: true,
         parts: [{
-            name: '2nd place: Game & Simulation Design'
+            name: '2017 FBLA State Conference',
+            icon: FaMobileAlt,
+            parts: [{
+                name: '1st place: Mobile App Development'
+            }, {
+                name: '1st place: Cyber Security'
+            }]
+        }, {
+            name: '2016 Verizon App Challenge',
+            icon: FaAward,
+            parts: [{
+                name: 'Best in Region (U.S. West)'
+            }, {
+                name: 'Best in State (Colorado)'
+            }]
+        }, {
+            name: '2016 FBLA State Conference',
+            icon: FaMobileAlt,
+            parts: [{
+                name: '2nd place: Game & Simulation Design'
+            }]
+        }, {
+            name: '2015 FBLA National Conference',
+            icon: FaDesktop,
+            parts: [{
+                name: 'Top 10: Desktop App Development'
+            }]
+        }, {
+            name: '2015 FBLA State Conference',
+            icon: FaDesktop,
+            parts: [{
+                name: '1st place: Desktop App Development'
+            }]
         }]
     }, {
-        name: '2014 FBLA National Conference',
-        icon: FaDesktop,
+        name: 'Misc.',
+        icon: FaAddressBook,
         toggle: true,
         parts: [{
-            name: 'Top 10: Desktop App Development'
-        }]
-    }, {
-        name: '2014 FBLA State Conference',
-        icon: FaDesktop,
-        toggle: true,
-        parts: [{
-            name: '1st place: Desktop App Development'
+            name: '2013: Second Degree Black Belt',
+            icon: FaRunning
         }]
     }]
 }];
