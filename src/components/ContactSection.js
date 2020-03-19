@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {FaEnvelopeOpen, FaGithub, FaLinkedin, FaStackOverflow, FaTwitter} from 'react-icons/all';
-import {Row} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 
 const media = [{
     icon: FaGithub,
@@ -29,28 +29,21 @@ const media = [{
 }];
 
 export default function ContactSection() {
-
     return (
         <div className="story-page py-4" style={{background: '#0005'}}>
-            <Row>
-                <div className="col-md-4 col-sm-2">
-                </div>
-                <div className="col-md-4 col-sm-8">
-                    <img className="img-fluid" src={'img/profile.jpg'} alt=""/>
-                </div>
-                <div className="col-md-4 col-sm-2">
-                </div>
-            </Row>
+            <div className="text-center">
+                <img style={{width: '80%', maxWidth: '450px'}} src={'img/profile.jpg'} alt=""/>
+            </div>
             <div className="text-center px-5">
                 <hr/>
                 <h1 className="text-thin text-light py-2">Ryan Vandersmith</h1>
                 <div className="container">
                     {media.map(m => (
                         <a key={m.link}
-                            className={`btn btn-lg px-3 py-3 mb-3 mx-2 btn-outline-${m.color || 'dark'} text-${m.color || 'dark'}`}
+                           className={`btn btn-lg px-3 py-3 mb-3 mx-2 btn-outline-${m.color || 'dark'} text-${m.color || 'dark'}`}
                            style={{borderRadius: '50% !important', ...m.style}}
                            href={m.link}
-                            target="_blank">
+                           target="_blank">
                             <m.icon size="1.5em"/>
                         </a>
                     ))}
