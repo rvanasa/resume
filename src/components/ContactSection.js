@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {FaEnvelopeOpen, FaGithub, FaLinkedin, FaStackOverflow, FaTwitter} from 'react-icons/all';
-import {Col, Row} from 'react-bootstrap';
 
 const media = [{
     icon: FaGithub,
@@ -43,7 +41,8 @@ export default function ContactSection() {
                            className={`btn btn-lg px-3 py-3 mb-3 mx-2 btn-outline-${m.color || 'dark'} text-${m.color || 'dark'}`}
                            style={{borderRadius: '50% !important', ...m.style}}
                            href={m.link}
-                           target="_blank">
+                           target="_blank"
+						   rel="noopener noreferrer">
                             <m.icon size="1.5em"/>
                         </a>
                     ))}

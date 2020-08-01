@@ -1,19 +1,20 @@
 import React, {useState} from 'react';
 import {
     FaAddressBook,
-    FaAdjust,
-    FaAppStore, FaAtlas,
-    FaAward, FaAws, FaBookmark, FaBookOpen, FaChess, FaChessKing, FaCity,
+    FaAppStore,
+    FaAward,
+	FaBookOpen,
     FaCode,
-    FaCubes,
-    FaDesktop, FaDollarSign, FaFlagUsa,
+    FaDesktop,
     FaGlobe,
     FaGraduationCap,
     FaHardHat,
     FaMedal,
     FaMobileAlt,
-    FaMoneyBillAlt, FaQrcode,
-    FaRegBuilding, FaRegFlag,
+    FaMoneyBillAlt,
+	FaQrcode,
+    FaRegBuilding,
+	FaRegFlag,
     FaRibbon,
     FaRunning,
     FaSchool,
@@ -120,6 +121,8 @@ const skills = [{
             parts: [{
                 name: 'Models',
                 parts: [{
+                    name: 'Keras'
+                }, {
                     name: 'TensorFlow'
                 }, {
                     name: 'Transformers'
@@ -127,8 +130,6 @@ const skills = [{
                     name: 'GPT-2'
                 }, {
                     name: 'BERT'
-                }, {
-                    name: 'DeepPavlov'
                 }]
             }]
         }, {

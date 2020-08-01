@@ -1,5 +1,4 @@
 import React from 'react';
-import {Parallax} from 'react-parallax';
 import Pivot from '../Pivot';
 import {ListGroup, ListGroupItem} from 'react-bootstrap';
 import {
@@ -97,7 +96,7 @@ const story = [{
 
 export default function StoryPage() {
     return (
-        <div className="bg-img" style={{backgroundImage: 'url(img/rays.jpg)'}}>
+        <div className="bg-img" style={{backgroundImage: 'url(img/stairs.jpg)'}}>
             <Pivot title={['A', 'Story']} name caret background={'#0003'}
                    left={{name: 'Home', link: '/'}} right={{name: 'Skills', link: '/skills'}}/>
             <div className="divider bg-info"/>
