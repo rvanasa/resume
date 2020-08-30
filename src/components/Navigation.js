@@ -12,7 +12,7 @@ export default function Navigation() {
                 <NavigationLink to="/projects">Projects</NavigationLink>
                 <NavigationLink to="/contact">Contact</NavigationLink>
             </div>
-            <div className="py-1 bg-primary"/>
+            <div className="py-1 bg-info"/>
         </>
     );
 };
